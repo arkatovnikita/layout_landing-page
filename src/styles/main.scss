@@ -691,6 +691,14 @@ body {
     background-color: #f8f8fa;
 
     transition: border-color 300ms;
+  }
+
+  &__input {
+    height: 48px;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+
+    border-radius: 40px;
 
     &::placeholder {
       color: #7e7e83;
@@ -705,20 +713,24 @@ body {
     }
   }
 
-  &__input {
-    height: 48px;
-    margin-bottom: 16px;
-    padding: 14px 16px;
-
-    border-radius: 40px;
-  }
-
   &__textarea {
     height: 148px;
     padding: 14px 16px;
 
     border-radius: 16px;
     resize: none;
+
+    &::placeholder {
+      color: #7e7e83;
+    }
+
+    &:hover {
+      border-color: #d5d7de;
+    }
+
+    &:focus {
+      border-color: #292929;
+    }
   }
 
   &__button {
